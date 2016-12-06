@@ -1,5 +1,5 @@
 {
-  "revision_id": "95ce6ade86b71349aea60fb7bc31a2fbad375d342322bf9270a4904b00e460ca",
+  "revision_id": "15d0faf593c46942c0fde8db50968e7cd527321af7d67b3641eb67af5c1882ad",
   "name": "devbox",
   "run_list": [
     "recipe[devbox::default]"
@@ -7,18 +7,19 @@
   "cookbook_locks": {
     "devbox": {
       "version": "0.0.0",
-      "identifier": "9d53ff50ee182c9d580b2fb3b9276f13a493596b",
-      "dotted_decimal_identifier": "44283927383119916.44288376411765031.122130156181867",
+      "identifier": "98432c2b090654838f053a884bc9e79037577bb7",
+      "dotted_decimal_identifier": "42858053439653460.37030474568715209.254606589787063",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": null,
-        "working_tree_clean": true,
-        "published": false,
+        "remote": "git@github.com:notnmeyer/devbox.git",
+        "revision": "15a5dede3a79a80a434acae414d890dfbf947041",
+        "working_tree_clean": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/HEAD -> origin/master",
+          "origin/master"
         ]
       },
       "source_options": {
