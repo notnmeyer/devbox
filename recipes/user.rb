@@ -46,9 +46,9 @@ git "#{code_dir}/dotfiles" do
 	group node['devbox']['user']
 end
 
-execute 'set up dotfile symlinks' do
-	cwd "#{code_dir}/dotfiles"
-	command './symlink.sh'
-	user node['devbox']['user']
-	group node['devbox']['user']
-end
+#execute 'set up dotfile symlinks' do
+#	cwd "#{code_dir}/dotfiles"
+#  command './symlink.sh'
+#  user node['devbox']['user']
+#	group node['devbox']['user']
+#end
