@@ -1,5 +1,5 @@
 {
-  "revision_id": "8ab9d66781683034c142d0b72ee52e53b1f2318383808565ab11f41c34fd7b8b",
+  "revision_id": "989fa192fb25690fcdf175e14e0217a1a6ccdf5fb062aca2e547923016eed63c",
   "name": "devbox",
   "run_list": [
     "recipe[devbox::default]"
@@ -18,17 +18,18 @@
     },
     "devbox": {
       "version": "0.0.0",
-      "identifier": "0c22968190955c03d0d584af2928fa6e51cb0188",
-      "dotted_decimal_identifier": "3415729534702940.1074040402815272.275351725605256",
+      "identifier": "9f61afbf8dcdd5a6023943d6480a6f044e7bb76c",
+      "dotted_decimal_identifier": "44861928757906901.46727291108476938.122064287283052",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:notnmeyer/devbox.git",
-        "revision": "d2a55cf54e607b9e2daddacd891136244a8ad8b5",
+        "revision": "a1758a3766a4b0bc6a7b27c1c7727a9af8e1fa87",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
           "origin/master"
         ]
       },
