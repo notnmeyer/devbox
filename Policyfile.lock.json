@@ -1,24 +1,34 @@
 {
-  "revision_id": "15d0faf593c46942c0fde8db50968e7cd527321af7d67b3641eb67af5c1882ad",
+  "revision_id": "8ab9d66781683034c142d0b72ee52e53b1f2318383808565ab11f41c34fd7b8b",
   "name": "devbox",
   "run_list": [
     "recipe[devbox::default]"
   ],
   "cookbook_locks": {
+    "build-essential": {
+      "version": "8.0.3",
+      "identifier": "dfc29e7a0586933293e233bc74048fadae0e3ca1",
+      "dotted_decimal_identifier": "62982905714280083.14236348575413252.157976112282785",
+      "cache_key": "build-essential-8.0.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.0.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.0.3/download",
+        "version": "8.0.3"
+      }
+    },
     "devbox": {
       "version": "0.0.0",
-      "identifier": "98432c2b090654838f053a884bc9e79037577bb7",
-      "dotted_decimal_identifier": "42858053439653460.37030474568715209.254606589787063",
+      "identifier": "0c22968190955c03d0d584af2928fa6e51cb0188",
+      "dotted_decimal_identifier": "3415729534702940.1074040402815272.275351725605256",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:notnmeyer/devbox.git",
-        "revision": "15a5dede3a79a80a434acae414d890dfbf947041",
+        "revision": "d2a55cf54e607b9e2daddacd891136244a8ad8b5",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
           "origin/master"
         ]
       },
@@ -26,93 +36,37 @@
         "path": "."
       }
     },
-    "build-essential": {
-      "version": "7.0.2",
-      "identifier": "534f5c76385b652e8138b49b1700bb6f1e98ae76",
-      "dotted_decimal_identifier": "23449681605974885.13089929476904704.206085929086582",
-      "cache_key": "build-essential-7.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/7.0.2/download",
+    "mingw": {
+      "version": "2.0.1",
+      "identifier": "9d203e2036b6d20a161e9649f1bc1e3fb2a4ff85",
+      "dotted_decimal_identifier": "44227022544090834.2839070393364924.33258928930693",
+      "cache_key": "mingw-2.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/2.0.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/7.0.2/download",
-        "version": "7.0.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/2.0.1/download",
+        "version": "2.0.1"
+      }
+    },
+    "ohai": {
+      "version": "5.2.0",
+      "identifier": "31667e457ea2295ec2c43d24708b5b3edaea387e",
+      "dotted_decimal_identifier": "13904966376661545.26672795905978507.100325518882942",
+      "cache_key": "ohai-5.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.0/download",
+        "version": "5.2.0"
       }
     },
     "ruby_rbenv": {
-      "version": "1.1.0",
-      "identifier": "2611c917fb8c4cf851764a9593b648878a8f181a",
-      "dotted_decimal_identifier": "10715604503465036.69895362723550134.79746982418458",
-      "cache_key": "ruby_rbenv-adc59d626b9a8e58d6aa5c085f561f6b25cd0043",
-      "origin": "git://github.com/chef-rbenv/ruby_rbenv.git",
+      "version": "2.0.5",
+      "identifier": "a9799d427fa983233e000f3cb6982c702be6ef40",
+      "dotted_decimal_identifier": "47702987396589955.9919794161432216.48860284514112",
+      "cache_key": "ruby_rbenv-2.0.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ruby_rbenv/versions/2.0.5/download",
       "source_options": {
-        "git": "git://github.com/chef-rbenv/ruby_rbenv.git",
-        "revision": "adc59d626b9a8e58d6aa5c085f561f6b25cd0043",
-        "tag": "v1.1.0"
-      }
-    },
-    "ssh": {
-      "version": "0.10.16",
-      "identifier": "5416a4de635a4e25f3b70438896b7457fccfdbd9",
-      "dotted_decimal_identifier": "23668795405195854.10682541513673067.127921252457433",
-      "cache_key": "ssh-0.10.16-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ssh/versions/0.10.16/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ssh/versions/0.10.16/download",
-        "version": "0.10.16"
-      }
-    },
-    "sshd": {
-      "version": "1.2.1",
-      "identifier": "58bd3bd9f829a2d760629e46e53eef7811cdf732",
-      "dotted_decimal_identifier": "24977862708177314.60623096671298878.263298973824818",
-      "cache_key": "sshd-1.2.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sshd/versions/1.2.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sshd/versions/1.2.1/download",
-        "version": "1.2.1"
-      }
-    },
-    "sudo": {
-      "version": "3.1.0",
-      "identifier": "294cf3ee6cf7a8af55561bed8a90168a98c954f3",
-      "dotted_decimal_identifier": "11625084606019496.49351949248465552.24784524629235",
-      "cache_key": "sudo-3.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/3.1.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/3.1.0/download",
-        "version": "3.1.0"
-      }
-    },
-    "yum": {
-      "version": "4.1.0",
-      "identifier": "1571eeb05cee897a7a84cb17ce39b9484ded1f2e",
-      "dotted_decimal_identifier": "6036244485959305.34474657920306745.203720196169518",
-      "cache_key": "yum-4.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/4.1.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/4.1.0/download",
-        "version": "4.1.0"
-      }
-    },
-    "ruby_build": {
-      "version": "1.0.0",
-      "identifier": "c23c2100ab95b35c77b4bbfaf46d83415964a4ea",
-      "dotted_decimal_identifier": "54672257924699571.26027315988984941.144316695880938",
-      "cache_key": "ruby_build-1.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ruby_build/versions/1.0.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ruby_build/versions/1.0.0/download",
-        "version": "1.0.0"
-      }
-    },
-    "yum-epel": {
-      "version": "1.0.2",
-      "identifier": "13acaabe8bfa2eedacaf6d040c745aabae0e4834",
-      "dotted_decimal_identifier": "5537873898764846.66899438928661620.99693406079028",
-      "cache_key": "yum-epel-1.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/1.0.2/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/1.0.2/download",
-        "version": "1.0.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ruby_rbenv/versions/2.0.5/download",
+        "version": "2.0.5"
       }
     },
     "seven_zip": {
@@ -126,37 +80,59 @@
         "version": "2.0.2"
       }
     },
-    "mingw": {
-      "version": "1.2.4",
-      "identifier": "c4f0ae0ce0635c9ec82cdc01b570a7dcc1b19521",
-      "dotted_decimal_identifier": "55433725766296412.44693141315499376.184566584284449",
-      "cache_key": "mingw-1.2.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/1.2.4/download",
+    "ssh": {
+      "version": "0.10.22",
+      "identifier": "3038524340ede083d3df379c7db6e056a34aa0c3",
+      "dotted_decimal_identifier": "13572724848913888.37106177613266358.246662711386307",
+      "cache_key": "ssh-0.10.22-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ssh/versions/0.10.22/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/1.2.4/download",
-        "version": "1.2.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ssh/versions/0.10.22/download",
+        "version": "0.10.22"
       }
     },
-    "compat_resource": {
-      "version": "12.16.2",
-      "identifier": "ae22c628790a712a227e1045a1cfde6a45af12e3",
-      "dotted_decimal_identifier": "49014880425544305.11859873856070095.244548017001187",
-      "cache_key": "compat_resource-12.16.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.16.2/download",
+    "sshd": {
+      "version": "1.3.1",
+      "identifier": "8bdd6039c8c2033e77b565472c24eb03554acb2c",
+      "dotted_decimal_identifier": "39368427118838275.17583069528009764.258399548394284",
+      "cache_key": "sshd-1.3.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sshd/versions/1.3.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.16.2/download",
-        "version": "12.16.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sshd/versions/1.3.1/download",
+        "version": "1.3.1"
+      }
+    },
+    "sudo": {
+      "version": "3.5.3",
+      "identifier": "19ad30c724ec2b76082809c0b769a268a4a92661",
+      "dotted_decimal_identifier": "7227299428887595.33223015307196265.178570322847329",
+      "cache_key": "sudo-3.5.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/3.5.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/3.5.3/download",
+        "version": "3.5.3"
       }
     },
     "windows": {
-      "version": "2.0.2",
-      "identifier": "59e724b02f856cdd8a72cb82922eb820557ab3c7",
-      "dotted_decimal_identifier": "25305417687991660.62358195498291758.202449012569031",
-      "cache_key": "windows-2.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/2.0.2/download",
+      "version": "3.2.0",
+      "identifier": "934ecb79cb2115ec3f26e5112a93dd589195c27d",
+      "dotted_decimal_identifier": "41463457405149461.66497530788129427.243372469371517",
+      "cache_key": "windows-3.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.2.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/2.0.2/download",
-        "version": "2.0.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.2.0/download",
+        "version": "3.2.0"
+      }
+    },
+    "yum": {
+      "version": "5.0.1",
+      "identifier": "33e596545789984a0b83bf5821941be3771d342f",
+      "dotted_decimal_identifier": "14607657635121560.20841808755433876.30663769928751",
+      "cache_key": "yum-5.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/5.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/5.0.1/download",
+        "version": "5.0.1"
       }
     }
   },
@@ -169,60 +145,52 @@
   "solution_dependencies": {
     "Policyfile": [
       [
+        "build-essential",
+        "= 8.0.3"
+      ],
+      [
         "devbox",
         ">= 0.0.0"
       ],
       [
-        "build-essential",
-        "= 7.0.2"
+        "mingw",
+        "= 2.0.1"
+      ],
+      [
+        "ohai",
+        "= 5.2.0"
       ],
       [
         "ruby_rbenv",
-        ">= 0.0.0"
-      ],
-      [
-        "ssh",
-        "= 0.10.16"
-      ],
-      [
-        "sshd",
-        "= 1.2.1"
-      ],
-      [
-        "sudo",
-        "= 3.1.0"
-      ],
-      [
-        "yum",
-        "= 4.1.0"
-      ],
-      [
-        "ruby_build",
-        "= 1.0.0"
-      ],
-      [
-        "yum-epel",
-        "= 1.0.2"
+        "= 2.0.5"
       ],
       [
         "seven_zip",
         "= 2.0.2"
       ],
       [
-        "mingw",
-        "= 1.2.4"
+        "ssh",
+        "= 0.10.22"
       ],
       [
-        "compat_resource",
-        "= 12.16.2"
+        "sshd",
+        "= 1.3.1"
+      ],
+      [
+        "sudo",
+        "= 3.5.3"
       ],
       [
         "windows",
-        "= 2.0.2"
+        "= 3.2.0"
+      ],
+      [
+        "yum",
+        "= 5.0.1"
       ]
     ],
     "dependencies": {
-      "build-essential (7.0.2)": [
+      "build-essential (8.0.3)": [
         [
           "seven_zip",
           ">= 0.0.0"
@@ -230,63 +198,7 @@
         [
           "mingw",
           ">= 1.1.0"
-        ],
-        [
-          "compat_resource",
-          ">= 12.14.0"
         ]
-      ],
-      "ruby_rbenv (1.1.0)": [
-        [
-          "ruby_build",
-          ">= 0.0.0"
-        ]
-      ],
-      "ssh (0.10.16)": [
-
-      ],
-      "sshd (1.2.1)": [
-
-      ],
-      "sudo (3.1.0)": [
-
-      ],
-      "yum (4.1.0)": [
-
-      ],
-      "ruby_build (1.0.0)": [
-        [
-          "yum-epel",
-          ">= 0.0.0"
-        ]
-      ],
-      "yum-epel (1.0.2)": [
-        [
-          "yum",
-          ">= 3.6.0"
-        ]
-      ],
-      "seven_zip (2.0.2)": [
-        [
-          "windows",
-          ">= 1.2.2"
-        ]
-      ],
-      "mingw (1.2.4)": [
-        [
-          "seven_zip",
-          ">= 0.0.0"
-        ],
-        [
-          "compat_resource",
-          ">= 0.0.0"
-        ]
-      ],
-      "compat_resource (12.16.2)": [
-
-      ],
-      "windows (2.0.2)": [
-
       ],
       "devbox (0.0.0)": [
         [
@@ -302,10 +214,6 @@
           ">= 0.0.0"
         ],
         [
-          "sshd",
-          ">= 0.0.0"
-        ],
-        [
           "sudo",
           ">= 0.0.0"
         ],
@@ -313,6 +221,42 @@
           "yum",
           ">= 0.0.0"
         ]
+      ],
+      "mingw (2.0.1)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ]
+      ],
+      "ohai (5.2.0)": [
+
+      ],
+      "ruby_rbenv (2.0.5)": [
+
+      ],
+      "seven_zip (2.0.2)": [
+        [
+          "windows",
+          ">= 1.2.2"
+        ]
+      ],
+      "ssh (0.10.22)": [
+
+      ],
+      "sshd (1.3.1)": [
+
+      ],
+      "sudo (3.5.3)": [
+
+      ],
+      "windows (3.2.0)": [
+        [
+          "ohai",
+          ">= 4.0.0"
+        ]
+      ],
+      "yum (5.0.1)": [
+
       ]
     }
   }

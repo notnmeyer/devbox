@@ -1,4 +1,5 @@
 # devbox
 
-TODO: Enter the cookbook description here.
-
+0. `chef export PolicyFile.rb export --force`
+0. `cd export`
+0. `chef-client -z`

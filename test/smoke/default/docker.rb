@@ -6,9 +6,8 @@ describe package('docker') do
   it { should be_installed }
 end
 
-describe service('docker') do
-  it { should be_running }
-  it { should be_enabled }
+describe command('find /etc/systemd/system') do
+  its('stdout') { should match 'docker.service' }
 end
 
 describe package('docker-compose') do

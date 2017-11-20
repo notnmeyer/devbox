@@ -1,19 +1,27 @@
 ---
 driver:
-  name: vagrant
+  name: dokken
+  chef_version: latest
+
+transport:
+  name: dokken
 
 provisioner:
-  name: policyfile_zero
+  name: dokken
 
 verifier:
   name: inspec
 
 platforms:
-  - name: fedora-24
+- name: fedora-26
+  driver:
+    image: dokken/fedora-26
+    pid_one_command: /usr/lib/systemd/systemd
+    intermediate_instructions:
+      - RUN dnf -y clean packages && dnf -y install sudo openssh-server && ssh-keygen -A
 
 suites:
   - name: default
     verifier:
       inspec_tests:
-        - test/recipes
-    attributes:
+      - path: test/smoke/default

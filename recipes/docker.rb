@@ -7,7 +7,7 @@
 package %w(docker docker-compose)
 
 service 'docker' do
-  action [:enable, :start]
+  action [:enable]
 end
 
 group 'docker' do
