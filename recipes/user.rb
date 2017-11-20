@@ -1,9 +1,3 @@
-#
-# Cookbook Name:: devbox
-# Recipe:: user
-#
-# Copyright (c) 2016 Nate Meyer, All Rights Reserved.
-
 user node['devbox']['user'] do
 	manage_home true
 end

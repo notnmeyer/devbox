@@ -1,9 +1,3 @@
-#
-# Cookbook Name:: devbox
-# Recipe:: default
-#
-# Copyright (c) 2016 Nate Meyer, All Rights Reserved.
-
 include_recipe 'build-essential'
 
 package %w(git vim)
